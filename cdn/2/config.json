@@ -1492,6 +1492,12 @@
           "widgetId": "widget_89",
           "bbox": {},
           "setting": {}
+        },
+        "8": {
+          "type": "WIDGET",
+          "widgetId": "widget_90",
+          "bbox": {},
+          "setting": {}
         }
       },
       "type": "FIXED",
@@ -1500,7 +1506,8 @@
         "5",
         "4",
         "6",
-        "7"
+        "7",
+        "8"
       ]
     }
   },
@@ -2289,82 +2296,6 @@
               }
             ],
             "defaultAddressFieldName": "default_address"
-          },
-          {
-            "configId": "config_1",
-            "icon": null,
-            "label": "what3words_EN_English",
-            "hint": "Enter 3 words (e.g., apple.orange.banana)",
-            "useUtility": {
-              "utilityId": "utility_5"
-            },
-            "searchServiceType": "GeocodeService",
-            "singleLineFieldName": "SingleLine",
-            "isSupportSuggest": true,
-            "spatialReference": {
-              "wkid": 4326,
-              "latestWkid": 4326
-            },
-            "outputDataSourceId": "widget_18_output_config_1",
-            "addressFields": [
-              {
-                "jimuName": "default_address",
-                "alias": "Default Address",
-                "type": "STRING",
-                "name": "default_address"
-              },
-              {
-                "jimuName": "what3words",
-                "alias": "what3words",
-                "type": "STRING",
-                "name": "what3words"
-              },
-              {
-                "jimuName": "Shape",
-                "alias": "Shape",
-                "type": "STRING",
-                "name": "Shape"
-              },
-              {
-                "jimuName": "Status",
-                "alias": "Status",
-                "type": "STRING",
-                "name": "Status"
-              },
-              {
-                "jimuName": "Score",
-                "alias": "Score",
-                "type": "STRING",
-                "name": "Score"
-              },
-              {
-                "jimuName": "what3words",
-                "alias": "what3words",
-                "type": "STRING",
-                "name": "what3words"
-              },
-              {
-                "jimuName": "Match_addr",
-                "alias": "Match_addr",
-                "type": "STRING",
-                "name": "Match_addr"
-              },
-              {
-                "jimuName": "Addr_type",
-                "alias": "Addr_type",
-                "type": "STRING",
-                "name": "Addr_type"
-              }
-            ],
-            "displayFields": [
-              {
-                "jimuName": "default_address",
-                "alias": "Default Address",
-                "type": "STRING",
-                "name": "default_address"
-              }
-            ],
-            "defaultAddressFieldName": "default_address"
           }
         ],
         "isAutoSelectFirstResult": false,
@@ -2374,15 +2305,11 @@
       "useUtilities": [
         {
           "utilityId": "utility_1"
-        },
-        {
-          "utilityId": "utility_5"
         }
       ],
       "label": "Search",
       "outputDataSources": [
-        "widget_18_output_config_default_geocode_utility_1_0",
-        "widget_18_output_config_1"
+        "widget_18_output_config_default_geocode_utility_1_0"
       ],
       "useDataSources": []
     },
@@ -3011,7 +2938,6 @@
       "uri": "widgets/common/text/",
       "version": "1.16.0",
       "config": {
-        "placeholder": "<p><strong style=\"font-size: 20px; color: var(--light);\">Double click to edit text</strong></p>",
         "style": {
           "color": "var(--primary)",
           "wrap": false
@@ -10236,6 +10162,19 @@
       "useMapWidgetIds": [
         "widget_11"
       ]
+    },
+    "widget_90": {
+      "uri": "widgets/w3w/",
+      "version": "1.16.0",
+      "label": "What 3 Words",
+      "config": {
+        "showScale": true,
+        "showZoom": true
+      },
+      "id": "widget_90",
+      "useMapWidgetIds": [
+        "widget_11"
+      ]
     }
   },
   "exbVersion": "1.16.0",
@@ -10244,7 +10183,7 @@
   "forBuilderAttributes": {
     "lockLayout": false
   },
-  "template": "0",
+  "template": "3d22a1b606244c19ad95e81df69135c3",
   "widgetsManifest": {},
   "views": {
     "view_1": {
@@ -10490,7 +10429,7 @@
       }
     }
   },
-  "publishTimestamp": 1735570905687,
+  "publishTimestamp": 1735681668271,
   "useAutoSortInFixedLayout": true,
   "header": {
     "layout": {
@@ -10514,11 +10453,11 @@
   "attributes": {
     "portalUrl": "https://pec.maps.arcgis.com",
     "isWebTier": false,
-    "clientId": "sO9UXfd1ySnGRfOw",
+    "clientId": "",
     "express": false,
-    "title": "FIRE VIEWER V4 Developers 1",
+    "title": "FIRE VIEWER V4 Developers",
     "description": "",
-    "type": "Web Experience Template",
+    "type": "Web Experience",
     "thumbnail": null
   },
   "sharedThemeVariables": {
@@ -10948,74 +10887,14 @@
         }
       },
       "geometryType": "esriGeometryPoint"
-    },
-    "widget_18_output_config_1": {
-      "id": "widget_18_output_config_1",
-      "type": "FEATURE_LAYER",
-      "label": "what3words_EN_English",
-      "originDataSources": [],
-      "isOutputFromWidget": true,
-      "isDataInDataSourceInstance": false,
-      "schema": {
-        "label": "what3words_EN_English",
-        "idField": "objectid",
-        "fields": {
-          "default_address": {
-            "jimuName": "default_address",
-            "alias": "Default Address",
-            "type": "STRING",
-            "name": "default_address"
-          },
-          "objectid": {
-            "jimuName": "objectid",
-            "alias": "OBJECTID",
-            "type": "NUMBER",
-            "name": "objectid"
-          },
-          "what3words": {
-            "jimuName": "what3words",
-            "alias": "what3words",
-            "type": "STRING",
-            "name": "what3words"
-          },
-          "Shape": {
-            "jimuName": "Shape",
-            "alias": "Shape",
-            "type": "STRING",
-            "name": "Shape"
-          },
-          "Status": {
-            "jimuName": "Status",
-            "alias": "Status",
-            "type": "STRING",
-            "name": "Status"
-          },
-          "Score": {
-            "jimuName": "Score",
-            "alias": "Score",
-            "type": "STRING",
-            "name": "Score"
-          },
-          "Match_addr": {
-            "jimuName": "Match_addr",
-            "alias": "Match_addr",
-            "type": "STRING",
-            "name": "Match_addr"
-          },
-          "Addr_type": {
-            "jimuName": "Addr_type",
-            "alias": "Addr_type",
-            "type": "STRING",
-            "name": "Addr_type"
-          }
-        }
-      },
-      "geometryType": "esriGeometryPoint"
     }
   },
   "customTheme": {
     "colors": {
       "primary": "#db0407"
+    },
+    "typography": {
+      "fontFamilyBase": "Microsoft YaHei"
     }
   },
   "utilities": {
@@ -11112,5 +10991,5 @@
       "index": 3
     }
   },
-  "timestamp": "1735570894798"
+  "timestamp": 1735681352261
 }
