@@ -1,0 +1,19 @@
+{
+  "name": "w3w",
+  "label": "What 3 Words",
+  "type": "widget",
+  "version": "1.16.0",
+  "exbVersion": "1.16.0",
+  "author": "Kevin Van Dijk",
+  "description": "This widget incorportates W3W api.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {},
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 400,
+    "height": 200
+  }
+}
